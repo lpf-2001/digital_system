@@ -1,0 +1,243 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+counter
+# storage
+db|connection.(2).cnf
+db|connection.(2).cnf
+# case_insensitive
+# source_file
+counter.bdf
+458f81d806dcf18e7b2eb462faf5354
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter:inst1
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|connection.(3).cnf
+db|connection.(3).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+ENT
+-1
+2
+ENP
+-1
+2
+}
+# include_file {
+..|..|..|..|..|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+counter:inst1|74161:inst
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|connection.(4).cnf
+db|connection.(4).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+counter:inst1|74161:inst|f74161:sub
+}
+# macro_sequence
+
+# end
+# entity
+mux2_1
+# storage
+db|connection.(5).cnf
+db|connection.(5).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+mux2_1.vhd
+88859e1f2ab87c62d318e386cfd7c9ac
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+mux2_1:inst2
+}
+# lmf
+..|..|..|..|..|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+n7449
+# storage
+db|connection.(6).cnf
+db|connection.(6).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+n7449.vhd
+5fc04376abee939b1f14b45e56ab36
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+n7449:inst3
+}
+# lmf
+..|..|..|..|..|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+connection
+# storage
+db|connection.(0).cnf
+db|connection.(0).cnf
+# case_insensitive
+# source_file
+connection.bdf
+9afb34f42c6f64d1c16f1df448252990
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+usbconnection
+# storage
+db|connection.(1).cnf
+db|connection.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+usbconnection.vhd
+dcfb9d3fe3c0e930d775231ab89861f
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+usbconnection:inst
+}
+# lmf
+..|..|..|..|..|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

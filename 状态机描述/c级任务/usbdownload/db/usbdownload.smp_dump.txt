@@ -1,0 +1,12 @@
+
+State Machine - |usbdownload|reg_fstate
+Name reg_fstate.latch_data_from_host reg_fstate.set_rd_low reg_fstate.wait_rxf_low 
+reg_fstate.wait_rxf_low 0 0 0 
+reg_fstate.set_rd_low 0 1 1 
+reg_fstate.latch_data_from_host 1 0 1 
+
+State Machine - |usbdownload|fstate
+Name fstate.latch_data_from_host fstate.set_rd_low fstate.wait_rxf_low 
+fstate.wait_rxf_low 0 0 0 
+fstate.set_rd_low 0 1 1 
+fstate.latch_data_from_host 1 0 1 

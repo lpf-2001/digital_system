@@ -1,0 +1,124 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+counter
+# storage
+db|counter.(0).cnf
+db|counter.(0).cnf
+# case_insensitive
+# source_file
+counter.bdf
+458f81d806dcf18e7b2eb462faf5354
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+74161
+# storage
+db|counter.(1).cnf
+db|counter.(1).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|quartus|libraries|others|maxplus2|74161.tdf
+8ae87de328fa01839f5a524a1a9ba
+7
+# user_parameter {
+DEVICE_FAMILY
+Cyclone II
+PARAMETER_UNKNOWN
+USR
+AUTO_CARRY_CHAINS
+ON
+AUTO_CARRY
+USR
+IGNORE_CARRY_BUFFERS
+OFF
+IGNORE_CARRY
+USR
+AUTO_CASCADE_CHAINS
+ON
+AUTO_CASCADE
+USR
+IGNORE_CASCADE_BUFFERS
+OFF
+IGNORE_CASCADE
+USR
+}
+# used_port {
+QB
+-1
+3
+QA
+-1
+3
+CLRN
+-1
+3
+CLK
+-1
+3
+ENT
+-1
+2
+ENP
+-1
+2
+}
+# include_file {
+..|..|..|..|..|quartus|libraries|megafunctions|aglobal.inc
+99832fdf63412df51d7531202d74e75
+}
+# hierarchies {
+74161:inst
+}
+# macro_sequence
+
+# end
+# entity
+f74161
+# storage
+db|counter.(2).cnf
+db|counter.(2).cnf
+# case_insensitive
+# source_file
+..|..|..|..|..|quartus|libraries|others|maxplus2|f74161.bdf
+408d3815988dee8ef0f04d17774959
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74161:inst|f74161:sub
+}
+# macro_sequence
+
+# end
+# complete
+

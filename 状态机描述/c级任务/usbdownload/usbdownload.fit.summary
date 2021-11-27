@@ -1,0 +1,10 @@
+Fitter Status : Successful - Fri Apr 30 13:25:49 2021
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : usbdownload
+Top-level Entity Name : usbdownload
+Family : FLEX10K
+Device : EPF10K70RC240-3
+Timing Models : Final
+Total logic elements : 8 / 3,744 ( < 1 % )
+Total pins : 5 / 189 ( 3 % )
+Total memory bits : 0 / 18,432 ( 0 % )

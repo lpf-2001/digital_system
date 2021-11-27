@@ -1,0 +1,32 @@
+|chuanshu
+rd <= usbdownload:inst5.rd
+clk => usbdownload:inst5.clock
+reset => usbdownload:inst5.reset
+rxf => usbdownload:inst5.RXF
+dout[0] <= inst4[0].DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= inst4[1].DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= inst4[2].DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= inst4[3].DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= inst4[4].DB_MAX_OUTPUT_PORT_TYPE
+dout[5] <= inst4[5].DB_MAX_OUTPUT_PORT_TYPE
+dout[6] <= inst4[6].DB_MAX_OUTPUT_PORT_TYPE
+dout[7] <= inst4[7].DB_MAX_OUTPUT_PORT_TYPE
+din[0] => inst4[0].DATAIN
+din[1] => inst4[1].DATAIN
+din[2] => inst4[2].DATAIN
+din[3] => inst4[3].DATAIN
+din[4] => inst4[4].DATAIN
+din[5] => inst4[5].DATAIN
+din[6] => inst4[6].DATAIN
+din[7] => inst4[7].DATAIN
+
+
+|chuanshu|usbdownload:inst5
+clock => rd~reg0.CLK
+clock => en_out~reg0.CLK
+RXF => Selector1.IN2
+RXF => reg_fstate~0.DATAB
+rd <= rd~reg0.DB_MAX_OUTPUT_PORT_TYPE
+en_out <= en_out~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,278 @@
+Analysis & Synthesis report for fasheng
+Thu Jun 10 21:07:17 2021
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Inverted Register Statistics
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                 ;
++-------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status   ; Successful - Thu Jun 10 21:07:17 2021        ;
+; Quartus II Version            ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
+; Revision Name                 ; fasheng                                      ;
+; Top-level Entity Name         ; fasheng                                      ;
+; Family                        ; Stratix II                                   ;
+; Logic utilization             ; N/A                                          ;
+;     Combinational ALUTs       ; 291                                          ;
+;     Dedicated logic registers ; 202                                          ;
+; Total registers               ; 202                                          ;
+; Total pins                    ; 18                                           ;
+; Total virtual pins            ; 0                                            ;
+; Total block memory bits       ; 0                                            ;
+; DSP block 9-bit elements      ; 0                                            ;
+; Total PLLs                    ; 0                                            ;
+; Total DLLs                    ; 0                                            ;
++-------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                        ; fasheng            ; fasheng            ;
+; Family name                                                  ; Stratix II         ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; DSP Block Balancing                                          ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto DSP Block Replacement                                   ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM Block Balancing                                     ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Timing-Driven Synthesis                                      ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                  ; Off                ; Off                ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; SDC constraint protection                                    ; Off                ; Off                ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
+; fasheng.bdf                      ; yes             ; User Block Diagram/Schematic File  ; D:/实验/数字系统实验/综合实验/综合实验2/fasheng/fasheng.bdf ;
+; voice.vhd                        ; yes             ; Auto-Found VHDL File               ; D:/实验/数字系统实验/综合实验/综合实验2/fasheng/voice.vhd   ;
+; yinpin.vhd                       ; yes             ; Auto-Found VHDL File               ; D:/实验/数字系统实验/综合实验/综合实验2/fasheng/yinpin.vhd  ;
+; fenpin.vhd                       ; yes             ; Auto-Found VHDL File               ; D:/实验/数字系统实验/综合实验/综合实验2/fasheng/fenpin.vhd  ;
+; jingbao.vhd                      ; yes             ; Auto-Found VHDL File               ; D:/实验/数字系统实验/综合实验/综合实验2/fasheng/jingbao.vhd ;
++----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------+
+
+
++-------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                       ;
++-----------------------------------------------+-------------------+
+; Resource                                      ; Usage             ;
++-----------------------------------------------+-------------------+
+; Estimated ALUTs Used                          ; 291               ;
+; Dedicated logic registers                     ; 202               ;
+;                                               ;                   ;
+; Estimated ALUTs Unavailable                   ; 10                ;
+;                                               ;                   ;
+; Total combinational functions                 ; 291               ;
+; Combinational ALUT usage by number of inputs  ;                   ;
+;     -- 7 input functions                      ; 0                 ;
+;     -- 6 input functions                      ; 18                ;
+;     -- 5 input functions                      ; 29                ;
+;     -- 4 input functions                      ; 32                ;
+;     -- <=3 input functions                    ; 212               ;
+;                                               ;                   ;
+; Combinational ALUTs by mode                   ;                   ;
+;     -- normal mode                            ; 99                ;
+;     -- extended LUT mode                      ; 0                 ;
+;     -- arithmetic mode                        ; 192               ;
+;     -- shared arithmetic mode                 ; 0                 ;
+;                                               ;                   ;
+; Estimated ALUT/register pairs used            ; 291               ;
+;                                               ;                   ;
+; Total registers                               ; 202               ;
+;     -- Dedicated logic registers              ; 202               ;
+;     -- I/O registers                          ; 0                 ;
+;                                               ;                   ;
+; Estimated ALMs:  partially or completely used ; 146               ;
+;                                               ;                   ;
+; I/O pins                                      ; 18                ;
+; Maximum fan-out node                          ; fenpin:inst1|out1 ;
+; Maximum fan-out                               ; 166               ;
+; Total fan-out                                 ; 1409              ;
+; Average fan-out                               ; 2.76              ;
++-----------------------------------------------+-------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                             ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name   ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+; |fasheng                   ; 291 (0)           ; 202 (0)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 18   ; 0            ; |fasheng              ; work         ;
+;    |fenpin:inst1|          ; 41 (41)           ; 33 (33)      ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fasheng|fenpin:inst1 ; work         ;
+;    |jingbao:inst|          ; 21 (21)           ; 0 (0)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fasheng|jingbao:inst ; work         ;
+;    |voice:inst2|           ; 9 (9)             ; 4 (4)        ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fasheng|voice:inst2  ; work         ;
+;    |yinpin:inst3|          ; 220 (220)         ; 165 (165)    ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0    ; 0            ; |fasheng|yinpin:inst3 ; work         ;
++----------------------------+-------------------+--------------+-------------------+--------------+---------+-----------+-----------+------+--------------+-----------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 202   ;
+; Number of registers using Synchronous Clear  ; 192   ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; voice:inst2|q                          ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Jun 10 21:07:15 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fasheng -c fasheng
+Info: Found 1 design units, including 1 entities, in source file fasheng.bdf
+    Info: Found entity 1: fasheng
+Info: Elaborating entity "fasheng" for the top level hierarchy
+Warning: Using design file voice.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: voice-y115
+    Info: Found entity 1: voice
+Info: Elaborating entity "voice" for hierarchy "voice:inst2"
+Warning: Using design file yinpin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: yinpin-one
+    Info: Found entity 1: yinpin
+Info: Elaborating entity "yinpin" for hierarchy "yinpin:inst3"
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(99): signal "out5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(100): signal "out4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(101): signal "out3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(102): signal "out2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(103): signal "out1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at yinpin.vhd(96): inferring latch(es) for signal or variable "output", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "output" at yinpin.vhd(96)
+Warning: Using design file fenpin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: fenpin-one
+    Info: Found entity 1: fenpin
+Info: Elaborating entity "fenpin" for hierarchy "fenpin:inst1"
+Warning: Using design file jingbao.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: jingbao-cc
+    Info: Found entity 1: jingbao
+Info: Elaborating entity "jingbao" for hierarchy "jingbao:inst"
+Warning: LATCH primitive "yinpin:inst3|output" is permanently enabled
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer yinpin:inst3|Mux1
+    Warning: Found clock multiplexer jingbao:inst|q~synth
+    Warning: Found clock multiplexer jingbao:inst|q~synth
+Info: Implemented 309 device resources after synthesis - the final resource count might be different
+    Info: Implemented 17 input pins
+    Info: Implemented 1 output pins
+    Info: Implemented 291 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 249 megabytes
+    Info: Processing ended: Thu Jun 10 21:07:17 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

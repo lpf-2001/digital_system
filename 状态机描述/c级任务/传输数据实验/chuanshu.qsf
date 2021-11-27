@@ -1,0 +1,84 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+# Date created = 15:56:01  April 27, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		chuanshu_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone II"
+set_global_assignment -name DEVICE EP2C5T144C8
+set_global_assignment -name TOP_LEVEL_ENTITY chuanshu
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "15:56:01  APRIL 27, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP1"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE ANY
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name MISC_FILE "D:/实验/数字系统实验/状态机描述/c级任务/传输数据实验/chuanshu.dpf"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "IO PATHS AND MINIMUM TPD PATHS"
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_location_assignment PIN_91 -to clk
+set_location_assignment PIN_28 -to din[7]
+set_location_assignment PIN_27 -to din[6]
+set_location_assignment PIN_26 -to din[5]
+set_location_assignment PIN_25 -to din[4]
+set_location_assignment PIN_24 -to din[3]
+set_location_assignment PIN_8 -to din[1]
+set_location_assignment PIN_9 -to din[2]
+set_location_assignment PIN_7 -to din[0]
+set_location_assignment PIN_118 -to dout[7]
+set_location_assignment PIN_115 -to dout[6]
+set_location_assignment PIN_114 -to dout[5]
+set_location_assignment PIN_113 -to dout[4]
+set_location_assignment PIN_112 -to dout[3]
+set_location_assignment PIN_104 -to dout[2]
+set_location_assignment PIN_103 -to dout[1]
+set_location_assignment PIN_101 -to dout[0]
+set_location_assignment PIN_86 -to rd
+set_location_assignment PIN_71 -to reset
+set_location_assignment PIN_59 -to rxf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE chuanshu.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE chuanshu.vwf
+set_global_assignment -name VHDL_FILE ../usbdownload/usbdownload.vhd
+set_global_assignment -name BDF_FILE chuanshu.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ../usbdownload/chuanshu.vwf

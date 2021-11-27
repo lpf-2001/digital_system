@@ -1,0 +1,25 @@
+<internal_error>
+	<executable>quartus.exe</executable>
+	<sub_system>unknown</sub_system>
+	<file>unknown</file>
+	<line>0</line>
+	<callstack>
+	0x00ff2410: ccl_thr + 0x2410 (thr_mutex_lock + 0x20)
+	0x0e21a482: pgm_pgme + 0xa482 (?set_padding@PGME_JTAG_CHAIN@@UAIXI@Z + 0xfe2)
+	0x00e394f2: ccl_mem + 0x94f2 (?locked_allocate@MEM_SEGMENT_INTERNAL@@AAIPAXPADKKPAVMEM_TRACKER_DATA@@@Z + 0x62)
+	0x76a62c8b: win32u + 0x2c8b (NtUserPostMessage + 0xb)
+	0x63e63432: MSVCR90 + 0x23432 (_endthreadex + 0x43)
+	0x63e634c6: MSVCR90 + 0x234c6 (_endthreadex + 0xd7)
+	0x76a96358: KERNEL32 + 0x16358 (BaseThreadInitThunk + 0x18)
+	0x775d8963: ntdll + 0x68963 (RtlGetAppContainerNamedObjectPath + 0xe3)
+	0x775d8933: ntdll + 0x68933 (RtlGetAppContainerNamedObjectPath + 0xb3)
+	0xffffffffffffffff:
+	</callstack>
+	<error>Current editor: GED</error>
+	<date>Sun Mar 28 16:24:17 2021</date>
+	<version>Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition</version>
+	<full_error>Access Violation at 0X00FF2410
+Current editor: GED
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition </full_error>
+</internal_error>
+

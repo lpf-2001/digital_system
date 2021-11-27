@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 4.298 ns
+From           : data1[13]
+To             : yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram|ram_block5a7~porta_datain_reg6
+From Clock     : --
+To Clock       : wclk
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 9.501 ns
+From           : yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|rdptr_g[6]
+To             : rdempty_1
+From Clock     : rclk
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.871 ns
+From           : data2[0]
+To             : yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram|ram_block5a0~porta_datain_reg0
+From Clock     : --
+To Clock       : wclk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'wclk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 210.08 MHz ( period = 4.760 ns )
+From           : yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10|dffe12a[3]
+To             : yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram|ram_block5a7~porta_datain_reg8
+From Clock     : wclk
+To Clock       : wclk
+Failed Paths   : 0
+
+Type           : Clock Setup: 'rclk'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 210.08 MHz ( period = 4.760 ns )
+From           : yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|rdptr_g[6]
+To             : yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram|q_b[63]
+From Clock     : rclk
+To Clock       : rclk
+Failed Paths   : 0
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 0
+
+--------------------------------------------------------------------------------------
+

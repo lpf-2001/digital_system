@@ -1,0 +1,18 @@
+
+State Machine - |crc|usbconnection:inst|next_state
+Name next_state.send_data_host next_state.set_wr_high next_state.wait_ntxe_low next_state.latch_data_from_host next_state.set_nrd_low next_state.wait_nrxf_low 
+next_state.wait_nrxf_low 0 0 0 0 0 0 
+next_state.set_nrd_low 0 0 0 0 1 1 
+next_state.latch_data_from_host 0 0 0 1 0 1 
+next_state.wait_ntxe_low 0 0 1 0 0 1 
+next_state.set_wr_high 0 1 0 0 0 1 
+next_state.send_data_host 1 0 0 0 0 1 
+
+State Machine - |crc|usbconnection:inst|current_state
+Name current_state.send_data_host current_state.set_wr_high current_state.wait_ntxe_low current_state.latch_data_from_host current_state.set_nrd_low current_state.wait_nrxf_low 
+current_state.wait_nrxf_low 0 0 0 0 0 0 
+current_state.set_nrd_low 0 0 0 0 1 1 
+current_state.latch_data_from_host 0 0 0 1 0 1 
+current_state.wait_ntxe_low 0 0 1 0 0 1 
+current_state.set_wr_high 0 1 0 0 0 1 
+current_state.send_data_host 1 0 0 0 0 1 

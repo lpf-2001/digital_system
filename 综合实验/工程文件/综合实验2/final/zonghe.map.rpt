@@ -1,0 +1,636 @@
+Analysis & Synthesis report for zonghe
+Fri Jun 19 16:39:19 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Inverted Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: scan_led3:inst|counter4:inst|74161:inst
+ 11. Parameter Settings for Inferred Entity Instance: distance:inst3|lpm_divide:Div0
+ 12. Parameter Settings for Inferred Entity Instance: fenwei:inst4|lpm_divide:Div0
+ 13. Parameter Settings for Inferred Entity Instance: fenwei:inst4|lpm_divide:Div1
+ 14. Parameter Settings for Inferred Entity Instance: fenwei:inst4|lpm_mult:Mult0
+ 15. lpm_mult Parameter Settings by Entity Instance
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Jun 19 16:39:19 2020        ;
+; Quartus II Version                 ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
+; Revision Name                      ; zonghe                                       ;
+; Top-level Entity Name              ; zonghe                                       ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 1,039                                        ;
+;     Total combinational functions  ; 1,022                                        ;
+;     Dedicated logic registers      ; 255                                          ;
+; Total registers                    ; 255                                          ;
+; Total pins                         ; 46                                           ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 0                                            ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Device                                                       ; EP2C5T144C8        ;                    ;
+; Top-level entity name                                        ; zonghe             ; zonghe             ;
+; Family name                                                  ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; DSP Block Balancing                                          ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Timing-Driven Synthesis                                      ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                  ; Off                ; Off                ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; SDC constraint protection                                    ; Off                ; Off                ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                                ; File Name with Absolute Path                                   ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------+
+; jishu1.vhd                       ; yes             ; User VHDL File                           ; C:/Users/tzp/Desktop/zonghe/jishu1.vhd                         ;
+; jishu2.vhd                       ; yes             ; User VHDL File                           ; C:/Users/tzp/Desktop/zonghe/jishu2.vhd                         ;
+; zonghe.bdf                       ; yes             ; User Block Diagram/Schematic File        ; C:/Users/tzp/Desktop/zonghe/zonghe.bdf                         ;
+; distance.vhd                     ; yes             ; User VHDL File                           ; C:/Users/tzp/Desktop/zonghe/distance.vhd                       ;
+; fenwei.vhd                       ; yes             ; User VHDL File                           ; C:/Users/tzp/Desktop/zonghe/fenwei.vhd                         ;
+; voice.vhd                        ; yes             ; Auto-Found VHDL File                     ; C:/Users/tzp/Desktop/zonghe/voice.vhd                          ;
+; yinpin.vhd                       ; yes             ; Auto-Found VHDL File                     ; C:/Users/tzp/Desktop/zonghe/yinpin.vhd                         ;
+; fenpin.vhd                       ; yes             ; Auto-Found VHDL File                     ; C:/Users/tzp/Desktop/zonghe/fenpin.vhd                         ;
+; jingbao.vhd                      ; yes             ; Auto-Found VHDL File                     ; C:/Users/tzp/Desktop/zonghe/jingbao.vhd                        ;
+; scan_led3.bdf                    ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tzp/Desktop/zonghe/scan_led3.bdf                      ;
+; addition.vhd                     ; yes             ; Auto-Found VHDL File                     ; C:/Users/tzp/Desktop/zonghe/addition.vhd                       ;
+; 7449.bdf                         ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/7449.bdf          ;
+; mux4_3_1.vhd                     ; yes             ; Auto-Found VHDL File                     ; C:/Users/tzp/Desktop/zonghe/mux4_3_1.vhd                       ;
+; counter4.bdf                     ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tzp/Desktop/zonghe/counter4.bdf                       ;
+; 74161.tdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/74161.tdf         ;
+; aglobal.inc                      ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/aglobal.inc         ;
+; f74161.bdf                       ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/f74161.bdf        ;
+; decoder2_3.bdf                   ; yes             ; Auto-Found Block Diagram/Schematic File  ; C:/Users/tzp/Desktop/zonghe/decoder2_3.bdf                     ;
+; 74139.bdf                        ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/others/maxplus2/74139.bdf         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/lpm_divide.tdf      ;
+; abs_divider.inc                  ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/abs_divider.inc     ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/sign_div_unsign.inc ;
+; aglobal90.inc                    ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/aglobal90.inc       ;
+; db/lpm_divide_7so.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/lpm_divide_7so.tdf              ;
+; db/abs_divider_kbg.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/abs_divider_kbg.tdf             ;
+; db/alt_u_div_k2f.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/alt_u_div_k2f.tdf               ;
+; db/add_sub_lkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/add_sub_lkc.tdf                 ;
+; db/add_sub_mkc.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/add_sub_mkc.tdf                 ;
+; db/lpm_abs_gq9.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/lpm_abs_gq9.tdf                 ;
+; db/lpm_abs_0s9.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/lpm_abs_0s9.tdf                 ;
+; db/lpm_divide_dem.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/lpm_divide_dem.tdf              ;
+; db/sign_div_unsign_nlh.tdf       ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/sign_div_unsign_nlh.tdf         ;
+; db/alt_u_div_g2f.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/alt_u_div_g2f.tdf               ;
+; db/lpm_divide_6so.tdf            ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/lpm_divide_6so.tdf              ;
+; db/abs_divider_jbg.tdf           ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/abs_divider_jbg.tdf             ;
+; db/alt_u_div_i2f.tdf             ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/alt_u_div_i2f.tdf               ;
+; db/lpm_abs_vr9.tdf               ; yes             ; Auto-Generated Megafunction              ; C:/Users/tzp/Desktop/zonghe/db/lpm_abs_vr9.tdf                 ;
+; lpm_mult.tdf                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/lpm_mult.tdf        ;
+; lpm_add_sub.inc                  ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/lpm_add_sub.inc     ;
+; multcore.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/multcore.inc        ;
+; bypassff.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/bypassff.inc        ;
+; altshift.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/altshift.inc        ;
+; multcore.tdf                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/multcore.tdf        ;
+; csa_add.inc                      ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/csa_add.inc         ;
+; mpar_add.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/mpar_add.inc        ;
+; muleabz.inc                      ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/muleabz.inc         ;
+; mul_lfrg.inc                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/mul_lfrg.inc        ;
+; mul_boothc.inc                   ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/mul_boothc.inc      ;
+; alt_ded_mult.inc                 ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/alt_ded_mult.inc    ;
+; alt_ded_mult_y.inc               ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/alt_ded_mult_y.inc  ;
+; dffpipe.inc                      ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/dffpipe.inc         ;
+; mpar_add.tdf                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/mpar_add.tdf        ;
+; altshift.tdf                     ; yes             ; Megafunction                             ; d:/quartus/quartus/libraries/megafunctions/altshift.tdf        ;
++----------------------------------+-----------------+------------------------------------------+----------------------------------------------------------------+
+
+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Estimated Total logic elements              ; 1,039             ;
+;                                             ;                   ;
+; Total combinational functions               ; 1022              ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 254               ;
+;     -- 3 input functions                    ; 271               ;
+;     -- <=2 input functions                  ; 497               ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 586               ;
+;     -- arithmetic mode                      ; 436               ;
+;                                             ;                   ;
+; Total registers                             ; 255               ;
+;     -- Dedicated logic registers            ; 255               ;
+;     -- I/O registers                        ; 0                 ;
+;                                             ;                   ;
+; I/O pins                                    ; 46                ;
+; Maximum fan-out node                        ; fenpin:inst5|out1 ;
+; Maximum fan-out                             ; 166               ;
+; Total fan-out                               ; 3359              ;
+; Average fan-out                             ; 2.54              ;
++---------------------------------------------+-------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Library Name ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
+; |zonghe                                   ; 1022 (0)          ; 255 (0)      ; 0           ; 0            ; 0       ; 0         ; 46   ; 0            ; |zonghe                                                                                                              ; work         ;
+;    |distance:inst3|                       ; 347 (17)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|distance:inst3                                                                                               ; work         ;
+;       |lpm_divide:Div0|                   ; 330 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|distance:inst3|lpm_divide:Div0                                                                               ; work         ;
+;          |lpm_divide_7so:auto_generated|  ; 330 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|distance:inst3|lpm_divide:Div0|lpm_divide_7so:auto_generated                                                 ; work         ;
+;             |abs_divider_kbg:divider|     ; 330 (32)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|distance:inst3|lpm_divide:Div0|lpm_divide_7so:auto_generated|abs_divider_kbg:divider                         ; work         ;
+;                |alt_u_div_k2f:divider|    ; 277 (277)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|distance:inst3|lpm_divide:Div0|lpm_divide_7so:auto_generated|abs_divider_kbg:divider|alt_u_div_k2f:divider   ; work         ;
+;                |lpm_abs_0s9:my_abs_num|   ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|distance:inst3|lpm_divide:Div0|lpm_divide_7so:auto_generated|abs_divider_kbg:divider|lpm_abs_0s9:my_abs_num  ; work         ;
+;    |fenpin:inst5|                         ; 47 (47)           ; 33 (33)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenpin:inst5                                                                                                 ; work         ;
+;    |fenwei:inst4|                         ; 261 (35)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4                                                                                                 ; work         ;
+;       |lpm_divide:Div0|                   ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div0                                                                                 ; work         ;
+;          |lpm_divide_dem:auto_generated|  ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div0|lpm_divide_dem:auto_generated                                                   ; work         ;
+;             |sign_div_unsign_nlh:divider| ; 67 (0)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div0|lpm_divide_dem:auto_generated|sign_div_unsign_nlh:divider                       ; work         ;
+;                |alt_u_div_g2f:divider|    ; 67 (67)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div0|lpm_divide_dem:auto_generated|sign_div_unsign_nlh:divider|alt_u_div_g2f:divider ; work         ;
+;       |lpm_divide:Div1|                   ; 153 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div1                                                                                 ; work         ;
+;          |lpm_divide_6so:auto_generated|  ; 153 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div1|lpm_divide_6so:auto_generated                                                   ; work         ;
+;             |abs_divider_jbg:divider|     ; 153 (7)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider                           ; work         ;
+;                |alt_u_div_i2f:divider|    ; 132 (132)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|alt_u_div_i2f:divider     ; work         ;
+;                |lpm_abs_vr9:my_abs_num|   ; 14 (14)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_divide:Div1|lpm_divide_6so:auto_generated|abs_divider_jbg:divider|lpm_abs_vr9:my_abs_num    ; work         ;
+;       |lpm_mult:Mult0|                    ; 6 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_mult:Mult0                                                                                  ; work         ;
+;          |multcore:mult_core|             ; 6 (6)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|fenwei:inst4|lpm_mult:Mult0|multcore:mult_core                                                               ; work         ;
+;    |jingbao:inst6|                        ; 28 (28)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|jingbao:inst6                                                                                                ; work         ;
+;    |jishu1:inst1|                         ; 26 (26)           ; 18 (18)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|jishu1:inst1                                                                                                 ; work         ;
+;    |jishu2:inst2|                         ; 23 (23)           ; 32 (32)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|jishu2:inst2                                                                                                 ; work         ;
+;    |scan_led3:inst|                       ; 14 (0)            ; 3 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst                                                                                               ; work         ;
+;       |addition:inst4|                    ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst|addition:inst4                                                                                ; work         ;
+;       |counter4:inst|                     ; 2 (0)             ; 3 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst|counter4:inst                                                                                 ; work         ;
+;          |74161:inst|                     ; 2 (0)             ; 2 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst|counter4:inst|74161:inst                                                                      ; work         ;
+;             |f74161:sub|                  ; 2 (2)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst|counter4:inst|74161:inst|f74161:sub                                                           ; work         ;
+;       |decoder2_3:inst1|                  ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst|decoder2_3:inst1                                                                              ; work         ;
+;          |74139:inst|                     ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst|decoder2_3:inst1|74139:inst                                                                   ; work         ;
+;       |mux4_3_1:inst2|                    ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|scan_led3:inst|mux4_3_1:inst2                                                                                ; work         ;
+;    |voice:inst8|                          ; 9 (9)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|voice:inst8                                                                                                  ; work         ;
+;    |yinpin:inst7|                         ; 267 (267)         ; 165 (165)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zonghe|yinpin:inst7                                                                                                 ; work         ;
++-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 255   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 36    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 31    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; jishu1:inst1|trig                      ; 2       ;
+; voice:inst8|q                          ; 2       ;
+; jishu1:inst1|clr                       ; 1       ;
+; Total number of inverted registers = 3 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |zonghe|scan_led3:inst|mux4_3_1:inst2|dout[0] ;
+; 16:1               ; 6 bits    ; 60 LEs        ; 36 LEs               ; 24 LEs                 ; No         ; |zonghe|scan_led3:inst|addition:inst4|qout[0] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: scan_led3:inst|counter4:inst|74161:inst ;
++------------------------+------------+------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                           ;
++------------------------+------------+------------------------------------------------+
+; DEVICE_FAMILY          ; Cyclone II ; Untyped                                        ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                     ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                   ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                   ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                 ;
++------------------------+------------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: distance:inst3|lpm_divide:Div0 ;
++------------------------+----------------+---------------------------------------+
+; Parameter Name         ; Value          ; Type                                  ;
++------------------------+----------------+---------------------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                               ;
+; LPM_WIDTHD             ; 5              ; Untyped                               ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                               ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                               ;
+; LPM_PIPELINE           ; 0              ; Untyped                               ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                               ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                               ;
+; CBXI_PARAMETER         ; lpm_divide_7so ; Untyped                               ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                               ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                               ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                            ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                          ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                          ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                        ;
++------------------------+----------------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: fenwei:inst4|lpm_divide:Div0 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 10             ; Untyped                             ;
+; LPM_WIDTHD             ; 7              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_dem ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: fenwei:inst4|lpm_divide:Div1 ;
++------------------------+----------------+-------------------------------------+
+; Parameter Name         ; Value          ; Type                                ;
++------------------------+----------------+-------------------------------------+
+; LPM_WIDTHN             ; 13             ; Untyped                             ;
+; LPM_WIDTHD             ; 5              ; Untyped                             ;
+; LPM_NREPRESENTATION    ; SIGNED         ; Untyped                             ;
+; LPM_DREPRESENTATION    ; SIGNED         ; Untyped                             ;
+; LPM_PIPELINE           ; 0              ; Untyped                             ;
+; LPM_REMAINDERPOSITIVE  ; FALSE          ; Untyped                             ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                             ;
+; CBXI_PARAMETER         ; lpm_divide_6so ; Untyped                             ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                             ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                             ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY                          ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY                        ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE                        ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE                      ;
++------------------------+----------------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: fenwei:inst4|lpm_mult:Mult0      ;
++------------------------------------------------+------------+---------------------+
+; Parameter Name                                 ; Value      ; Type                ;
++------------------------------------------------+------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON         ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF        ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON         ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF        ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 4          ; Untyped             ;
+; LPM_WIDTHB                                     ; 7          ; Untyped             ;
+; LPM_WIDTHP                                     ; 11         ; Untyped             ;
+; LPM_WIDTHR                                     ; 11         ; Untyped             ;
+; LPM_WIDTHS                                     ; 1          ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED   ; Untyped             ;
+; LPM_PIPELINE                                   ; 0          ; Untyped             ;
+; LATENCY                                        ; 0          ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO         ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; YES        ; Untyped             ;
+; USE_EAB                                        ; OFF        ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5          ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone II ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL     ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT        ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO       ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0          ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0          ; Untyped             ;
+; CBXI_PARAMETER                                 ; NOTHING    ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx         ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF        ; Untyped             ;
++------------------------------------------------+------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance                      ;
++---------------------------------------+-----------------------------+
+; Name                                  ; Value                       ;
++---------------------------------------+-----------------------------+
+; Number of entity instances            ; 1                           ;
+; Entity Instance                       ; fenwei:inst4|lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 4                           ;
+;     -- LPM_WIDTHB                     ; 7                           ;
+;     -- LPM_WIDTHP                     ; 11                          ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED                    ;
+;     -- INPUT_A_IS_CONSTANT            ; NO                          ;
+;     -- INPUT_B_IS_CONSTANT            ; YES                         ;
+;     -- USE_EAB                        ; OFF                         ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                        ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx                          ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx                          ;
++---------------------------------------+-----------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Fri Jun 19 16:39:14 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off zonghe -c zonghe
+Info: Found 2 design units, including 1 entities, in source file jishu1.vhd
+    Info: Found design unit 1: jishu1-arch
+    Info: Found entity 1: jishu1
+Info: Found 2 design units, including 1 entities, in source file jishu2.vhd
+    Info: Found design unit 1: jishu2-arch
+    Info: Found entity 1: jishu2
+Info: Found 1 design units, including 1 entities, in source file zonghe.bdf
+    Info: Found entity 1: zonghe
+Info: Found 2 design units, including 1 entities, in source file distance.vhd
+    Info: Found design unit 1: distance-rtl
+    Info: Found entity 1: distance
+Info: Found 2 design units, including 1 entities, in source file fenwei.vhd
+    Info: Found design unit 1: fenwei-rtl
+    Info: Found entity 1: fenwei
+Info: Elaborating entity "zonghe" for the top level hierarchy
+Warning: Block or symbol "jishu1" of instance "inst1" overlaps another block or symbol
+Info: Elaborating entity "jishu1" for hierarchy "jishu1:inst1"
+Warning (10492): VHDL Process Statement warning at jishu1.vhd(14): signal "j" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: Using design file voice.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: voice-y115
+    Info: Found entity 1: voice
+Info: Elaborating entity "voice" for hierarchy "voice:inst8"
+Warning: Using design file yinpin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: yinpin-one
+    Info: Found entity 1: yinpin
+Info: Elaborating entity "yinpin" for hierarchy "yinpin:inst7"
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(99): signal "out5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(100): signal "out4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(101): signal "out3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(102): signal "out2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at yinpin.vhd(103): signal "out1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at yinpin.vhd(96): inferring latch(es) for signal or variable "output", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "output" at yinpin.vhd(96)
+Warning: Using design file fenpin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: fenpin-one
+    Info: Found entity 1: fenpin
+Info: Elaborating entity "fenpin" for hierarchy "fenpin:inst5"
+Warning: Using design file jingbao.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: jingbao-cc
+    Info: Found entity 1: jingbao
+Info: Elaborating entity "jingbao" for hierarchy "jingbao:inst6"
+Info: Elaborating entity "distance" for hierarchy "distance:inst3"
+Warning (10492): VHDL Process Statement warning at distance.vhd(16): signal "data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Elaborating entity "jishu2" for hierarchy "jishu2:inst2"
+Warning (10492): VHDL Process Statement warning at jishu2.vhd(18): signal "j" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning: Using design file scan_led3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: scan_led3
+Info: Elaborating entity "scan_led3" for hierarchy "scan_led3:inst"
+Warning: Using design file addition.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: addition-rtl
+    Info: Found entity 1: addition
+Info: Elaborating entity "addition" for hierarchy "scan_led3:inst|addition:inst4"
+Info: Elaborating entity "7449" for hierarchy "scan_led3:inst|7449:inst5"
+Info: Elaborated megafunction instantiation "scan_led3:inst|7449:inst5"
+Warning: Using design file mux4_3_1.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: mux4_3_1-rtl
+    Info: Found entity 1: mux4_3_1
+Info: Elaborating entity "mux4_3_1" for hierarchy "scan_led3:inst|mux4_3_1:inst2"
+Warning: Using design file counter4.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: counter4
+Info: Elaborating entity "counter4" for hierarchy "scan_led3:inst|counter4:inst"
+Info: Elaborating entity "74161" for hierarchy "scan_led3:inst|counter4:inst|74161:inst"
+Info: Elaborated megafunction instantiation "scan_led3:inst|counter4:inst|74161:inst"
+Info: Elaborating entity "f74161" for hierarchy "scan_led3:inst|counter4:inst|74161:inst|f74161:sub"
+Info: Elaborated megafunction instantiation "scan_led3:inst|counter4:inst|74161:inst|f74161:sub", which is child of megafunction instantiation "scan_led3:inst|counter4:inst|74161:inst"
+Warning: Using design file decoder2_3.bdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: decoder2_3
+Info: Elaborating entity "decoder2_3" for hierarchy "scan_led3:inst|decoder2_3:inst1"
+Info: Elaborating entity "74139" for hierarchy "scan_led3:inst|decoder2_3:inst1|74139:inst"
+Info: Elaborated megafunction instantiation "scan_led3:inst|decoder2_3:inst1|74139:inst"
+Info: Elaborating entity "fenwei" for hierarchy "fenwei:inst4"
+Warning (10492): VHDL Process Statement warning at fenwei.vhd(17): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at fenwei.vhd(20): signal "cin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info: Ignored 1 buffer(s)
+    Info: Ignored 1 CARRY buffer(s)
+Warning: LATCH primitive "yinpin:inst7|output" is permanently enabled
+Warning: Clock multiplexers are found and protected
+    Warning: Found clock multiplexer yinpin:inst7|Mux1
+    Warning: Found clock multiplexer jingbao:inst6|q~synth
+    Warning: Found clock multiplexer jingbao:inst6|q~synth
+Info: Inferred 4 megafunctions from design logic
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "distance:inst3|Div0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "fenwei:inst4|Div0"
+    Info: Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "fenwei:inst4|Div1"
+    Info: Inferred multiplier megafunction ("lpm_mult") from the following logic: "fenwei:inst4|Mult0"
+Info: Elaborated megafunction instantiation "distance:inst3|lpm_divide:Div0"
+Info: Instantiated megafunction "distance:inst3|lpm_divide:Div0" with the following parameter:
+    Info: Parameter "LPM_WIDTHN" = "32"
+    Info: Parameter "LPM_WIDTHD" = "5"
+    Info: Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info: Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_7so.tdf
+    Info: Found entity 1: lpm_divide_7so
+Info: Found 1 design units, including 1 entities, in source file db/abs_divider_kbg.tdf
+    Info: Found entity 1: abs_divider_kbg
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_k2f.tdf
+    Info: Found entity 1: alt_u_div_k2f
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_lkc.tdf
+    Info: Found entity 1: add_sub_lkc
+Info: Found 1 design units, including 1 entities, in source file db/add_sub_mkc.tdf
+    Info: Found entity 1: add_sub_mkc
+Info: Found 1 design units, including 1 entities, in source file db/lpm_abs_gq9.tdf
+    Info: Found entity 1: lpm_abs_gq9
+Info: Found 1 design units, including 1 entities, in source file db/lpm_abs_0s9.tdf
+    Info: Found entity 1: lpm_abs_0s9
+Info: Elaborated megafunction instantiation "fenwei:inst4|lpm_divide:Div0"
+Info: Instantiated megafunction "fenwei:inst4|lpm_divide:Div0" with the following parameter:
+    Info: Parameter "LPM_WIDTHN" = "10"
+    Info: Parameter "LPM_WIDTHD" = "7"
+    Info: Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_dem.tdf
+    Info: Found entity 1: lpm_divide_dem
+Info: Found 1 design units, including 1 entities, in source file db/sign_div_unsign_nlh.tdf
+    Info: Found entity 1: sign_div_unsign_nlh
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_g2f.tdf
+    Info: Found entity 1: alt_u_div_g2f
+Info: Elaborated megafunction instantiation "fenwei:inst4|lpm_divide:Div1"
+Info: Instantiated megafunction "fenwei:inst4|lpm_divide:Div1" with the following parameter:
+    Info: Parameter "LPM_WIDTHN" = "13"
+    Info: Parameter "LPM_WIDTHD" = "5"
+    Info: Parameter "LPM_NREPRESENTATION" = "SIGNED"
+    Info: Parameter "LPM_DREPRESENTATION" = "SIGNED"
+    Info: Parameter "LPM_HINT" = "LPM_REMAINDERPOSITIVE=FALSE"
+Info: Found 1 design units, including 1 entities, in source file db/lpm_divide_6so.tdf
+    Info: Found entity 1: lpm_divide_6so
+Info: Found 1 design units, including 1 entities, in source file db/abs_divider_jbg.tdf
+    Info: Found entity 1: abs_divider_jbg
+Info: Found 1 design units, including 1 entities, in source file db/alt_u_div_i2f.tdf
+    Info: Found entity 1: alt_u_div_i2f
+Info: Found 1 design units, including 1 entities, in source file db/lpm_abs_vr9.tdf
+    Info: Found entity 1: lpm_abs_vr9
+Info: Elaborated megafunction instantiation "fenwei:inst4|lpm_mult:Mult0"
+Info: Instantiated megafunction "fenwei:inst4|lpm_mult:Mult0" with the following parameter:
+    Info: Parameter "LPM_WIDTHA" = "4"
+    Info: Parameter "LPM_WIDTHB" = "7"
+    Info: Parameter "LPM_WIDTHP" = "11"
+    Info: Parameter "LPM_WIDTHR" = "11"
+    Info: Parameter "LPM_WIDTHS" = "1"
+    Info: Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info: Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info: Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info: Parameter "MAXIMIZE_SPEED" = "5"
+    Info: Parameter "DEDICATED_MULTIPLIER_CIRCUITRY" = "AUTO"
+Info: Elaborated megafunction instantiation "fenwei:inst4|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "fenwei:inst4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "fenwei:inst4|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "fenwei:inst4|lpm_mult:Mult0"
+Info: Elaborated megafunction instantiation "fenwei:inst4|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "fenwei:inst4|lpm_mult:Mult0"
+Info: Ignored 11 buffer(s)
+    Info: Ignored 11 CARRY_SUM buffer(s)
+Info: Registers with preset signals will power-up high
+Info: DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Critical Warning: Ignored Power-Up Level option on the following registers
+    Critical Warning: Register jishu1:inst1|j[15] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[14] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[13] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[12] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[11] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[10] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[9] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[8] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[7] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[6] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[5] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[0] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[4] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[3] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[2] will power up to Low
+    Critical Warning: Register jishu1:inst1|j[1] will power up to Low
+Info: Implemented 1085 device resources after synthesis - the final resource count might be different
+    Info: Implemented 2 input pins
+    Info: Implemented 44 output pins
+    Info: Implemented 1039 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 43 warnings
+    Info: Peak virtual memory: 264 megabytes
+    Info: Processing ended: Fri Jun 19 16:39:19 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
+
+

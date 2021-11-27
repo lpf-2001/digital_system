@@ -1,0 +1,16 @@
+Fitter Status : Successful - Mon May 17 11:24:09 2021
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : yibu
+Top-level Entity Name : yibu
+Family : Cyclone II
+Device : EP2C5F256C6
+Timing Models : Final
+Total logic elements : 89 / 4,608 ( 2 % )
+    Total combinational functions : 41 / 4,608 ( < 1 % )
+    Dedicated logic registers : 80 / 4,608 ( 2 % )
+Total registers : 80
+Total pins : 86 / 158 ( 54 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 119,808 ( 7 % )
+Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

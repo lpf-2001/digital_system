@@ -1,0 +1,10 @@
+
+State Machine - |detect|fstate
+Name fstate.s6 fstate.s5 fstate.s4 fstate.s3 fstate.s2 fstate.s1 fstate.s0 
+fstate.s0 0 0 0 0 0 0 0 
+fstate.s1 0 0 0 0 0 1 1 
+fstate.s2 0 0 0 0 1 0 1 
+fstate.s3 0 0 0 1 0 0 1 
+fstate.s4 0 0 1 0 0 0 1 
+fstate.s5 0 1 0 0 0 0 1 
+fstate.s6 1 0 0 0 0 0 1 

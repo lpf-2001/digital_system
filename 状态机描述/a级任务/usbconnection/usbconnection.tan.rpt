@@ -1,0 +1,306 @@
+Classic Timing Analyzer report for usbconnection
+Mon May 10 18:56:27 2021
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Parallel Compilation
+  6. Clock Setup: 'clk'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                              ;
++------------------------------+-------+---------------+------------------------------------------------+--------------+------------------------+------------+----------+--------------+
+; Type                         ; Slack ; Required Time ; Actual Time                                    ; From         ; To                     ; From Clock ; To Clock ; Failed Paths ;
++------------------------------+-------+---------------+------------------------------------------------+--------------+------------------------+------------+----------+--------------+
+; Worst-case tsu               ; N/A   ; None          ; 5.428 ns                                       ; din[0]       ; a_in[0]                ; --         ; clk      ; 0            ;
+; Worst-case tco               ; N/A   ; None          ; 9.669 ns                                       ; dout[4]~reg0 ; dout[4]                ; clk        ; --       ; 0            ;
+; Worst-case th                ; N/A   ; None          ; 0.291 ns                                       ; nrxf         ; next_state.set_nrd_low ; --         ; clk      ; 0            ;
+; Clock Setup: 'clk'           ; N/A   ; None          ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[1]      ; dout[4]~reg0           ; clk        ; clk      ; 0            ;
+; Total number of failed paths ;       ;               ;                                                ;              ;                        ;            ;          ; 0            ;
++------------------------------+-------+---------------+------------------------------------------------+--------------+------------------------+------------+----------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EP2C5T144C8        ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; On                 ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                             ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clk             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-----------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 6      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clk'                                                                                                                                                                                                                           ;
++-------+------------------------------------------------+------------------------------------+------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From                               ; To                                 ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+------------------------------------+------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[1]                            ; dout[4]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.804 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[1]                            ; dout[2]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.802 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[5]                            ; dout[0]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.770 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[5]                            ; dout[1]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.769 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[7]                            ; dout[4]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.764 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[7]                            ; dout[2]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.762 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.send_data_host       ; dout[0]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.543 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.send_data_host       ; dout[1]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.543 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.send_data_host       ; dout[2]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.543 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.send_data_host       ; dout[3]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.543 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.send_data_host       ; dout[4]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.543 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[1]                            ; dout[0]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.524 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[1]                            ; dout[1]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.523 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[1]                            ; dout[3]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.516 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[0]                            ; dout[4]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.500 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[0]                            ; dout[2]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.498 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[4]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[0]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[5]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[1]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[2]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[3]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[6]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; a_in[7]                            ; clk        ; clk      ; None                        ; None                      ; 1.466 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[5]                            ; dout[2]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.438 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[2]                            ; dout[0]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.357 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[2]                            ; dout[1]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.356 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[7]                            ; dout[3]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.352 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[3]                            ; dout[4]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.340 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[3]                            ; dout[2]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.338 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[2]                            ; dout[3]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.244 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[3]                            ; dout[1]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.243 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[6]                            ; dout[1]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.240 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[6]                            ; dout[2]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.240 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[6]                            ; dout[3]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.240 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[4]                            ; dout[0]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.198 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[4]                            ; dout[3]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.197 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[4]                            ; dout[4]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 1.194 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.wait_ntxe_low        ; next_state.wait_ntxe_low           ; clk        ; clk      ; None                        ; None                      ; 1.176 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.wait_ntxe_low        ; next_state.set_wr_high             ; clk        ; clk      ; None                        ; None                      ; 1.175 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.send_data_host       ; next_state.wait_nrxf_low           ; clk        ; clk      ; None                        ; None                      ; 1.136 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; nrd~reg0                           ; clk        ; clk      ; None                        ; None                      ; 0.940 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.wait_nrxf_low        ; next_state.set_nrd_low             ; clk        ; clk      ; None                        ; None                      ; 0.932 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.wait_nrxf_low        ; next_state.wait_nrxf_low           ; clk        ; clk      ; None                        ; None                      ; 0.930 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; a_in[0]                            ; dout[0]~reg0                       ; clk        ; clk      ; None                        ; None                      ; 0.930 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.set_wr_high          ; next_state.send_data_host          ; clk        ; clk      ; None                        ; None                      ; 0.913 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; next_state.set_wr_high             ; current_state.set_wr_high          ; clk        ; clk      ; None                        ; None                      ; 0.911 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; next_state.wait_nrxf_low           ; current_state.wait_nrxf_low        ; clk        ; clk      ; None                        ; None                      ; 0.909 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.latch_data_from_host ; next_state.wait_ntxe_low           ; clk        ; clk      ; None                        ; None                      ; 0.889 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.set_wr_high          ; wr~reg0                            ; clk        ; clk      ; None                        ; None                      ; 0.882 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.send_data_host       ; wr~reg0                            ; clk        ; clk      ; None                        ; None                      ; 0.772 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.set_nrd_low          ; next_state.latch_data_from_host    ; clk        ; clk      ; None                        ; None                      ; 0.763 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; current_state.set_nrd_low          ; nrd~reg0                           ; clk        ; clk      ; None                        ; None                      ; 0.759 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; next_state.latch_data_from_host    ; current_state.latch_data_from_host ; clk        ; clk      ; None                        ; None                      ; 0.759 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; next_state.send_data_host          ; current_state.send_data_host       ; clk        ; clk      ; None                        ; None                      ; 0.748 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; next_state.set_nrd_low             ; current_state.set_nrd_low          ; clk        ; clk      ; None                        ; None                      ; 0.744 ns                ;
+; N/A   ; Restricted to 340.02 MHz ( period = 2.941 ns ) ; next_state.wait_ntxe_low           ; current_state.wait_ntxe_low        ; clk        ; clk      ; None                        ; None                      ; 0.743 ns                ;
++-------+------------------------------------------------+------------------------------------+------------------------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++----------------------------------------------------------------------------------+
+; tsu                                                                              ;
++-------+--------------+------------+--------+--------------------------+----------+
+; Slack ; Required tsu ; Actual tsu ; From   ; To                       ; To Clock ;
++-------+--------------+------------+--------+--------------------------+----------+
+; N/A   ; None         ; 5.428 ns   ; din[0] ; a_in[0]                  ; clk      ;
+; N/A   ; None         ; 4.671 ns   ; din[2] ; a_in[2]                  ; clk      ;
+; N/A   ; None         ; 4.522 ns   ; din[4] ; a_in[4]                  ; clk      ;
+; N/A   ; None         ; 4.512 ns   ; din[5] ; a_in[5]                  ; clk      ;
+; N/A   ; None         ; 4.478 ns   ; din[1] ; a_in[1]                  ; clk      ;
+; N/A   ; None         ; 4.471 ns   ; din[6] ; a_in[6]                  ; clk      ;
+; N/A   ; None         ; 4.224 ns   ; din[3] ; a_in[3]                  ; clk      ;
+; N/A   ; None         ; -0.007 ns  ; din[7] ; a_in[7]                  ; clk      ;
+; N/A   ; None         ; -0.019 ns  ; ntxe   ; next_state.wait_ntxe_low ; clk      ;
+; N/A   ; None         ; -0.022 ns  ; nrxf   ; next_state.wait_nrxf_low ; clk      ;
+; N/A   ; None         ; -0.023 ns  ; ntxe   ; next_state.set_wr_high   ; clk      ;
+; N/A   ; None         ; -0.025 ns  ; nrxf   ; next_state.set_nrd_low   ; clk      ;
++-------+--------------+------------+--------+--------------------------+----------+
+
+
++-------------------------------------------------------------------------+
+; tco                                                                     ;
++-------+--------------+------------+--------------+---------+------------+
+; Slack ; Required tco ; Actual tco ; From         ; To      ; From Clock ;
++-------+--------------+------------+--------------+---------+------------+
+; N/A   ; None         ; 9.669 ns   ; dout[4]~reg0 ; dout[4] ; clk        ;
+; N/A   ; None         ; 9.618 ns   ; wr~reg0      ; wr      ; clk        ;
+; N/A   ; None         ; 9.421 ns   ; dout[3]~reg0 ; dout[3] ; clk        ;
+; N/A   ; None         ; 9.393 ns   ; dout[1]~reg0 ; dout[1] ; clk        ;
+; N/A   ; None         ; 8.532 ns   ; nrd~reg0     ; nrd     ; clk        ;
+; N/A   ; None         ; 8.505 ns   ; dout[2]~reg0 ; dout[2] ; clk        ;
+; N/A   ; None         ; 7.663 ns   ; dout[0]~reg0 ; dout[0] ; clk        ;
++-------+--------------+------------+--------------+---------+------------+
+
+
++----------------------------------------------------------------------------------------+
+; th                                                                                     ;
++---------------+-------------+-----------+--------+--------------------------+----------+
+; Minimum Slack ; Required th ; Actual th ; From   ; To                       ; To Clock ;
++---------------+-------------+-----------+--------+--------------------------+----------+
+; N/A           ; None        ; 0.291 ns  ; nrxf   ; next_state.set_nrd_low   ; clk      ;
+; N/A           ; None        ; 0.289 ns  ; ntxe   ; next_state.set_wr_high   ; clk      ;
+; N/A           ; None        ; 0.288 ns  ; nrxf   ; next_state.wait_nrxf_low ; clk      ;
+; N/A           ; None        ; 0.285 ns  ; ntxe   ; next_state.wait_ntxe_low ; clk      ;
+; N/A           ; None        ; 0.273 ns  ; din[7] ; a_in[7]                  ; clk      ;
+; N/A           ; None        ; -3.958 ns ; din[3] ; a_in[3]                  ; clk      ;
+; N/A           ; None        ; -4.205 ns ; din[6] ; a_in[6]                  ; clk      ;
+; N/A           ; None        ; -4.212 ns ; din[1] ; a_in[1]                  ; clk      ;
+; N/A           ; None        ; -4.246 ns ; din[5] ; a_in[5]                  ; clk      ;
+; N/A           ; None        ; -4.256 ns ; din[4] ; a_in[4]                  ; clk      ;
+; N/A           ; None        ; -4.405 ns ; din[2] ; a_in[2]                  ; clk      ;
+; N/A           ; None        ; -5.162 ns ; din[0] ; a_in[0]                  ; clk      ;
++---------------+-------------+-----------+--------+--------------------------+----------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon May 10 18:56:27 2021
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off usbconnection -c usbconnection --timing_analysis_only
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clk" is an undefined clock
+Info: Clock "clk" Internal fmax is restricted to 340.02 MHz between source register "a_in[1]" and destination register "dout[4]~reg0"
+    Info: fmax restricted to clock pin edge rate 2.941 ns. Expand message to see actual delay path.
+        Info: + Longest register to register delay is 1.804 ns
+            Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X24_Y4_N17; Fanout = 3; REG Node = 'a_in[1]'
+            Info: 2: + IC(0.475 ns) + CELL(0.650 ns) = 1.125 ns; Loc. = LCCOMB_X24_Y4_N28; Fanout = 2; COMB Node = 'c[2]~17'
+            Info: 3: + IC(0.365 ns) + CELL(0.206 ns) = 1.696 ns; Loc. = LCCOMB_X24_Y4_N8; Fanout = 1; COMB Node = 'c[4]~19'
+            Info: 4: + IC(0.000 ns) + CELL(0.108 ns) = 1.804 ns; Loc. = LCFF_X24_Y4_N9; Fanout = 1; REG Node = 'dout[4]~reg0'
+            Info: Total cell delay = 0.964 ns ( 53.44 % )
+            Info: Total interconnect delay = 0.840 ns ( 46.56 % )
+        Info: - Smallest clock skew is 0.000 ns
+            Info: + Shortest clock path from clock "clk" to destination register is 2.751 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_17; Fanout = 1; CLK Node = 'clk'
+                Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.243 ns; Loc. = CLKCTRL_G2; Fanout = 27; COMB Node = 'clk~clkctrl'
+                Info: 3: + IC(0.842 ns) + CELL(0.666 ns) = 2.751 ns; Loc. = LCFF_X24_Y4_N9; Fanout = 1; REG Node = 'dout[4]~reg0'
+                Info: Total cell delay = 1.766 ns ( 64.19 % )
+                Info: Total interconnect delay = 0.985 ns ( 35.81 % )
+            Info: - Longest clock path from clock "clk" to source register is 2.751 ns
+                Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_17; Fanout = 1; CLK Node = 'clk'
+                Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.243 ns; Loc. = CLKCTRL_G2; Fanout = 27; COMB Node = 'clk~clkctrl'
+                Info: 3: + IC(0.842 ns) + CELL(0.666 ns) = 2.751 ns; Loc. = LCFF_X24_Y4_N17; Fanout = 3; REG Node = 'a_in[1]'
+                Info: Total cell delay = 1.766 ns ( 64.19 % )
+                Info: Total interconnect delay = 0.985 ns ( 35.81 % )
+        Info: + Micro clock to output delay of source is 0.304 ns
+        Info: + Micro setup delay of destination is -0.040 ns
+Info: tsu for register "a_in[0]" (data pin = "din[0]", clock pin = "clk") is 5.428 ns
+    Info: + Longest pin to register delay is 8.219 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.954 ns) = 0.954 ns; Loc. = PIN_43; Fanout = 1; PIN Node = 'din[0]'
+        Info: 2: + IC(6.805 ns) + CELL(0.460 ns) = 8.219 ns; Loc. = LCFF_X24_Y4_N5; Fanout = 2; REG Node = 'a_in[0]'
+        Info: Total cell delay = 1.414 ns ( 17.20 % )
+        Info: Total interconnect delay = 6.805 ns ( 82.80 % )
+    Info: + Micro setup delay of destination is -0.040 ns
+    Info: - Shortest clock path from clock "clk" to destination register is 2.751 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_17; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.243 ns; Loc. = CLKCTRL_G2; Fanout = 27; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.842 ns) + CELL(0.666 ns) = 2.751 ns; Loc. = LCFF_X24_Y4_N5; Fanout = 2; REG Node = 'a_in[0]'
+        Info: Total cell delay = 1.766 ns ( 64.19 % )
+        Info: Total interconnect delay = 0.985 ns ( 35.81 % )
+Info: tco from clock "clk" to destination pin "dout[4]" through register "dout[4]~reg0" is 9.669 ns
+    Info: + Longest clock path from clock "clk" to source register is 2.751 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_17; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.243 ns; Loc. = CLKCTRL_G2; Fanout = 27; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.842 ns) + CELL(0.666 ns) = 2.751 ns; Loc. = LCFF_X24_Y4_N9; Fanout = 1; REG Node = 'dout[4]~reg0'
+        Info: Total cell delay = 1.766 ns ( 64.19 % )
+        Info: Total interconnect delay = 0.985 ns ( 35.81 % )
+    Info: + Micro clock to output delay of source is 0.304 ns
+    Info: + Longest register to pin delay is 6.614 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LCFF_X24_Y4_N9; Fanout = 1; REG Node = 'dout[4]~reg0'
+        Info: 2: + IC(3.548 ns) + CELL(3.066 ns) = 6.614 ns; Loc. = PIN_28; Fanout = 0; PIN Node = 'dout[4]'
+        Info: Total cell delay = 3.066 ns ( 46.36 % )
+        Info: Total interconnect delay = 3.548 ns ( 53.64 % )
+Info: th for register "next_state.set_nrd_low" (data pin = "nrxf", clock pin = "clk") is 0.291 ns
+    Info: + Longest clock path from clock "clk" to destination register is 2.751 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.100 ns) = 1.100 ns; Loc. = PIN_17; Fanout = 1; CLK Node = 'clk'
+        Info: 2: + IC(0.143 ns) + CELL(0.000 ns) = 1.243 ns; Loc. = CLKCTRL_G2; Fanout = 27; COMB Node = 'clk~clkctrl'
+        Info: 3: + IC(0.842 ns) + CELL(0.666 ns) = 2.751 ns; Loc. = LCFF_X25_Y4_N29; Fanout = 1; REG Node = 'next_state.set_nrd_low'
+        Info: Total cell delay = 1.766 ns ( 64.19 % )
+        Info: Total interconnect delay = 0.985 ns ( 35.81 % )
+    Info: + Micro hold delay of destination is 0.306 ns
+    Info: - Shortest pin to register delay is 2.766 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.110 ns) = 1.110 ns; Loc. = PIN_89; Fanout = 2; PIN Node = 'nrxf'
+        Info: 2: + IC(1.346 ns) + CELL(0.202 ns) = 2.658 ns; Loc. = LCCOMB_X25_Y4_N28; Fanout = 1; COMB Node = 'next_state~15'
+        Info: 3: + IC(0.000 ns) + CELL(0.108 ns) = 2.766 ns; Loc. = LCFF_X25_Y4_N29; Fanout = 1; REG Node = 'next_state.set_nrd_low'
+        Info: Total cell delay = 1.420 ns ( 51.34 % )
+        Info: Total interconnect delay = 1.346 ns ( 48.66 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 190 megabytes
+    Info: Processing ended: Mon May 10 18:56:27 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

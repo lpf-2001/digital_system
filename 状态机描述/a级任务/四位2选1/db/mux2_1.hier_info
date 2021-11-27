@@ -1,0 +1,19 @@
+|mux2_1
+d1[0] => dout~4.DATAB
+d1[1] => dout~3.DATAB
+d1[2] => dout~2.DATAB
+d1[3] => dout~1.DATAB
+d2[0] => dout~4.DATAA
+d2[1] => dout~3.DATAA
+d2[2] => dout~2.DATAA
+d2[3] => dout~1.DATAA
+sel[0] => Equal0.IN0
+sel[0] => Equal1.IN1
+sel[1] => Equal0.IN1
+sel[1] => Equal1.IN0
+dout[0] <= dout~4.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout~3.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout~2.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

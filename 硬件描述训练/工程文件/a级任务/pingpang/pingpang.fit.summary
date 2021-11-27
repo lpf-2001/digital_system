@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue May 18 10:54:55 2021
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : pingpang
+Top-level Entity Name : pingpang
+Family : Cyclone II
+Device : EP2C15AF484C6
+Timing Models : Final
+Total logic elements : 182 / 14,448 ( 1 % )
+    Total combinational functions : 86 / 14,448 ( < 1 % )
+    Dedicated logic registers : 164 / 14,448 ( 1 % )
+Total registers : 164
+Total pins : 166 / 315 ( 53 % )
+Total virtual pins : 0
+Total memory bits : 16,384 / 239,616 ( 7 % )
+Embedded Multiplier 9-bit elements : 0 / 52 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

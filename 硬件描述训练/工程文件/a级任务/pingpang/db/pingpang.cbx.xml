@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="pingpang">
+		<CBX_INST_ENTRY INSTANCE_NAME="|pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component" CBX_FILE_NAME="dcfifo_uij1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component" CBX_FILE_NAME="dcfifo_uij1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

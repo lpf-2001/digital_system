@@ -1,0 +1,6 @@
+|road_sel
+wr => sel~0.OUTPUTSELECT
+nrd => sel~0.DATAA
+sel <= sel~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,10 @@
+v1
+REGISTER_PACKING,REG_PACK_TYPE_FINISHED,ADATA,0,q[0],q[0],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,0,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[0],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,8,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[1],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,17,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[2],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,9,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[3],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,4,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[4],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,15,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[5],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,6,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[6],
+RAM_PACKING,0,M512,18,18,SimpleDual,0,5,10000010,altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[7],

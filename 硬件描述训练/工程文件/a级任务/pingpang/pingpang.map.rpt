@@ -1,0 +1,601 @@
+Analysis & Synthesis report for pingpang
+Tue May 18 10:54:50 2021
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis RAM Summary
+  8. State Machine - |pingpang|FIFOcontrol:inst|fstate
+  9. Registers Protected by Synthesis
+ 10. General Register Statistics
+ 11. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated
+ 12. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_31c:wrptr_g1p
+ 13. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram
+ 14. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr
+ 15. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp
+ 16. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp|dffpipe_1v8:dffpipe7
+ 17. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp
+ 18. Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10
+ 19. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated
+ 20. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_31c:wrptr_g1p
+ 21. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram
+ 22. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr
+ 23. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp
+ 24. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp|dffpipe_1v8:dffpipe7
+ 25. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp
+ 26. Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10
+ 27. Parameter Settings for User Entity Instance: yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component
+ 28. Parameter Settings for User Entity Instance: yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component
+ 29. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                      ;
++------------------------------------+----------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue May 18 10:54:50 2021        ;
+; Quartus II Version                 ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
+; Revision Name                      ; pingpang                                     ;
+; Top-level Entity Name              ; pingpang                                     ;
+; Family                             ; Cyclone II                                   ;
+; Total logic elements               ; 200                                          ;
+;     Total combinational functions  ; 82                                           ;
+;     Dedicated logic registers      ; 164                                          ;
+; Total registers                    ; 164                                          ;
+; Total pins                         ; 166                                          ;
+; Total virtual pins                 ; 0                                            ;
+; Total memory bits                  ; 16,384                                       ;
+; Embedded Multiplier 9-bit elements ; 0                                            ;
+; Total PLLs                         ; 0                                            ;
++------------------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                        ; pingpang           ; pingpang           ;
+; Family name                                                  ; Cyclone II         ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; DSP Block Balancing                                          ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Timing-Driven Synthesis                                      ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                  ; Off                ; Off                ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; SDC constraint protection                                    ; Off                ; Off                ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                 ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
+; pingpang.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/pingpang.bdf              ;
+; yibu.vhd                         ; yes             ; Auto-Found Wizard-Generated File   ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/yibu.vhd                  ;
+; dcfifo_mixed_widths.tdf          ; yes             ; Megafunction                       ; d:/quartus/libraries/megafunctions/dcfifo_mixed_widths.tdf                   ;
+; db/dcfifo_uij1.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/dcfifo_uij1.tdf        ;
+; db/a_graycounter_f86.tdf         ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/a_graycounter_f86.tdf  ;
+; db/a_graycounter_31c.tdf         ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/a_graycounter_31c.tdf  ;
+; db/altsyncram_cnu.tdf            ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/altsyncram_cnu.tdf     ;
+; db/dffpipe_c2e.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/dffpipe_c2e.tdf        ;
+; db/alt_synch_pipe_7u7.tdf        ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/alt_synch_pipe_7u7.tdf ;
+; db/dffpipe_1v8.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/dffpipe_1v8.tdf        ;
+; db/alt_synch_pipe_8u7.tdf        ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/alt_synch_pipe_8u7.tdf ;
+; db/dffpipe_2v8.tdf               ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/dffpipe_2v8.tdf        ;
+; db/cmpr_s16.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/cmpr_s16.tdf           ;
+; db/cntr_7hd.tdf                  ; yes             ; Auto-Generated Megafunction        ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/db/cntr_7hd.tdf           ;
+; FIFOcontrol.vhd                  ; yes             ; Auto-Found VHDL File               ; D:/实验/数字系统实验/硬件描述训练/a级任务/pingpang/FIFOcontrol.vhd           ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimated Total logic elements              ; 200   ;
+;                                             ;       ;
+; Total combinational functions               ; 82    ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 23    ;
+;     -- 3 input functions                    ; 36    ;
+;     -- <=2 input functions                  ; 23    ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 46    ;
+;     -- arithmetic mode                      ; 36    ;
+;                                             ;       ;
+; Total registers                             ; 164   ;
+;     -- Dedicated logic registers            ; 164   ;
+;     -- I/O registers                        ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 166   ;
+; Total memory bits                           ; 16384 ;
+; Maximum fan-out node                        ; wclk  ;
+; Maximum fan-out                             ; 126   ;
+; Total fan-out                               ; 1454  ;
+; Average fan-out                             ; 3.27  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                       ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                ; Library Name ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+; |pingpang                                                 ; 82 (0)            ; 164 (0)      ; 16384       ; 0            ; 0       ; 0         ; 166  ; 0            ; |pingpang                                                                                                                                          ; work         ;
+;    |FIFOcontrol:inst|                                     ; 4 (4)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|FIFOcontrol:inst                                                                                                                         ; work         ;
+;    |yibu:inst1|                                           ; 39 (0)            ; 80 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1                                                                                                                               ; work         ;
+;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 39 (0)            ; 80 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
+;          |dcfifo_uij1:auto_generated|                     ; 39 (7)            ; 80 (27)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated                                                  ; work         ;
+;             |a_graycounter_31c:wrptr_g1p|                 ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_31c:wrptr_g1p                      ; work         ;
+;             |a_graycounter_f86:rdptr_g1p|                 ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_f86:rdptr_g1p                      ; work         ;
+;             |alt_synch_pipe_7u7:rs_dgwp|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp                       ; work         ;
+;                |dffpipe_1v8:dffpipe7|                     ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp|dffpipe_1v8:dffpipe7  ; work         ;
+;             |alt_synch_pipe_8u7:ws_dgrp|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp                       ; work         ;
+;                |dffpipe_2v8:dffpipe10|                    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10 ; work         ;
+;             |altsyncram_cnu:fifo_ram|                     ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram                          ; work         ;
+;             |cmpr_s16:rdempty_eq_comp|                    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cmpr_s16:rdempty_eq_comp                         ; work         ;
+;             |cmpr_s16:wrfull_eq_comp|                     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cmpr_s16:wrfull_eq_comp                          ; work         ;
+;             |cntr_7hd:cntr_b|                             ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cntr_7hd:cntr_b                                  ; work         ;
+;             |dffpipe_c2e:rdaclr|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr                               ; work         ;
+;    |yibu:inst2|                                           ; 39 (0)            ; 80 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2                                                                                                                               ; work         ;
+;       |dcfifo_mixed_widths:dcfifo_mixed_widths_component| ; 39 (0)            ; 80 (0)       ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component                                                                             ; work         ;
+;          |dcfifo_uij1:auto_generated|                     ; 39 (7)            ; 80 (27)      ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated                                                  ; work         ;
+;             |a_graycounter_31c:wrptr_g1p|                 ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_31c:wrptr_g1p                      ; work         ;
+;             |a_graycounter_f86:rdptr_g1p|                 ; 9 (9)             ; 9 (9)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_f86:rdptr_g1p                      ; work         ;
+;             |alt_synch_pipe_7u7:rs_dgwp|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp                       ; work         ;
+;                |dffpipe_1v8:dffpipe7|                     ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp|dffpipe_1v8:dffpipe7  ; work         ;
+;             |alt_synch_pipe_8u7:ws_dgrp|                  ; 0 (0)             ; 16 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp                       ; work         ;
+;                |dffpipe_2v8:dffpipe10|                    ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10 ; work         ;
+;             |altsyncram_cnu:fifo_ram|                     ; 0 (0)             ; 0 (0)        ; 8192        ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram                          ; work         ;
+;             |cmpr_s16:rdempty_eq_comp|                    ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cmpr_s16:rdempty_eq_comp                         ; work         ;
+;             |cmpr_s16:wrfull_eq_comp|                     ; 5 (5)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cmpr_s16:wrfull_eq_comp                          ; work         ;
+;             |cntr_7hd:cntr_b|                             ; 4 (4)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cntr_7hd:cntr_b                                  ; work         ;
+;             |dffpipe_c2e:rdaclr|                          ; 0 (0)             ; 1 (1)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |pingpang|yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr                               ; work         ;
++-----------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                               ;
++----------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; Name                                                                                                                       ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF  ;
++----------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+; yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 512          ; 16           ; 128          ; 64           ; 8192 ; None ;
+; yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 512          ; 16           ; 128          ; 64           ; 8192 ; None ;
++----------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
+Encoding Type:  One-Hot
++-----------------------------------------------------------------------------+
+; State Machine - |pingpang|FIFOcontrol:inst|fstate                           ;
++------------------+-------------+-------------+-----------+------------------+
+; Name             ; fstate.w1r2 ; fstate.r1w2 ; fstate.w1 ; fstate.initial_1 ;
++------------------+-------------+-------------+-----------+------------------+
+; fstate.initial_1 ; 0           ; 0           ; 0         ; 0                ;
+; fstate.w1        ; 0           ; 0           ; 1         ; 1                ;
+; fstate.r1w2      ; 0           ; 1           ; 0         ; 1                ;
+; fstate.w1r2      ; 1           ; 0           ; 0         ; 1                ;
++------------------+-------------+-------------+-----------+------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Protected by Synthesis                                                                                                                                                                                                     ;
++----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; Register Name                                                                                                        ; Protected by Synthesis Attribute or Preserve Register Assignment ; Not to be Touched by Netlist Optimizations ;
++----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+; yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr|dffe6a[0] ; yes                                                              ; yes                                        ;
+; yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr|dffe6a[0] ; yes                                                              ; yes                                        ;
++----------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------+--------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 164   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 20    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated                                                    ;
++---------------------------------+-----------------------------------------------------------------------------------+-----------------+---------------------------+
+; Assignment                      ; Value                                                                             ; From            ; To                        ;
++---------------------------------+-----------------------------------------------------------------------------------+-----------------+---------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF                                                                               ; -               ; -                         ;
+; REMOVE_DUPLICATE_REGISTERS      ; OFF                                                                               ; -               ; -                         ;
+; SUPPRESS_DA_RULE_INTERNAL       ; d101                                                                              ; -               ; -                         ;
+; SUPPRESS_DA_RULE_INTERNAL       ; d102                                                                              ; -               ; -                         ;
+; SUPPRESS_DA_RULE_INTERNAL       ; S102                                                                              ; -               ; -                         ;
+; POWER_UP_LEVEL                  ; LOW                                                                               ; -               ; p0addr                    ;
+; SUPPRESS_DA_RULE_INTERNAL       ; s102                                                                              ; -               ; wrptr_g                   ;
+; CUT                             ; ON                                                                                ; rdptr_g         ; ws_dgrp|dffpipe10|dffe11a ;
+; SDC_STATEMENT                   ; set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_2v8:dffpipe10|dffe11a*        ; -               ; -                         ;
+; CUT                             ; ON                                                                                ; delayed_wrptr_g ; rs_dgwp|dffpipe7|dffe8a   ;
+; SDC_STATEMENT                   ; set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_1v8:dffpipe7|dffe8a*  ; -               ; -                         ;
++---------------------------------+-----------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_31c:wrptr_g1p ;
++---------------------------+-------+------+-------------------------------------------------------------------------------------------------+
+; Assignment                ; Value ; From ; To                                                                                              ;
++---------------------------+-------+------+-------------------------------------------------------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                                                                               ;
++---------------------------+-------+------+-------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                       ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                        ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                               ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                ;
+; PRESERVE_REGISTER               ; ON    ; -    ; -                                                                                ;
+; SUPPRESS_DA_RULE_INTERNAL       ; c106  ; -    ; -                                                                                ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; Assignment            ; Value ; From ; To                                                                                                 ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; X_ON_VIOLATION_OPTION ; OFF   ; -    ; -                                                                                                  ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp|dffpipe_1v8:dffpipe7 ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                                            ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                                             ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; Assignment            ; Value ; From ; To                                                                                                 ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; X_ON_VIOLATION_OPTION ; OFF   ; -    ; -                                                                                                  ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10 ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                                             ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                                              ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated                                                    ;
++---------------------------------+-----------------------------------------------------------------------------------+-----------------+---------------------------+
+; Assignment                      ; Value                                                                             ; From            ; To                        ;
++---------------------------------+-----------------------------------------------------------------------------------+-----------------+---------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF                                                                               ; -               ; -                         ;
+; REMOVE_DUPLICATE_REGISTERS      ; OFF                                                                               ; -               ; -                         ;
+; SUPPRESS_DA_RULE_INTERNAL       ; d101                                                                              ; -               ; -                         ;
+; SUPPRESS_DA_RULE_INTERNAL       ; d102                                                                              ; -               ; -                         ;
+; SUPPRESS_DA_RULE_INTERNAL       ; S102                                                                              ; -               ; -                         ;
+; POWER_UP_LEVEL                  ; LOW                                                                               ; -               ; p0addr                    ;
+; SUPPRESS_DA_RULE_INTERNAL       ; s102                                                                              ; -               ; wrptr_g                   ;
+; CUT                             ; ON                                                                                ; rdptr_g         ; ws_dgrp|dffpipe10|dffe11a ;
+; SDC_STATEMENT                   ; set_false_path -from *rdptr_g* -to *ws_dgrp|dffpipe_2v8:dffpipe10|dffe11a*        ; -               ; -                         ;
+; CUT                             ; ON                                                                                ; delayed_wrptr_g ; rs_dgwp|dffpipe7|dffe8a   ;
+; SDC_STATEMENT                   ; set_false_path -from *delayed_wrptr_g* -to *rs_dgwp|dffpipe_1v8:dffpipe7|dffe8a*  ; -               ; -                         ;
++---------------------------------+-----------------------------------------------------------------------------------+-----------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_31c:wrptr_g1p ;
++---------------------------+-------+------+-------------------------------------------------------------------------------------------------+
+; Assignment                ; Value ; From ; To                                                                                              ;
++---------------------------+-------+------+-------------------------------------------------------------------------------------------------+
+; SUPPRESS_DA_RULE_INTERNAL ; s102  ; -    ; -                                                                                               ;
++---------------------------+-------+------+-------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                                       ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                        ;
++---------------------------------+--------------------+------+--------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                               ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                ;
+; PRESERVE_REGISTER               ; ON    ; -    ; -                                                                                ;
+; SUPPRESS_DA_RULE_INTERNAL       ; c106  ; -    ; -                                                                                ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; Assignment            ; Value ; From ; To                                                                                                 ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; X_ON_VIOLATION_OPTION ; OFF   ; -    ; -                                                                                                  ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp|dffpipe_1v8:dffpipe7 ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                                            ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                                             ;
++---------------------------------+-------+------+---------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; Assignment            ; Value ; From ; To                                                                                                 ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+; X_ON_VIOLATION_OPTION ; OFF   ; -    ; -                                                                                                  ;
++-----------------------+-------+------+----------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10 ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------------------------------------+
+; Assignment                      ; Value ; From ; To                                                                                                             ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------------------------------------+
+; AUTO_SHIFT_REGISTER_RECOGNITION ; OFF   ; -    ; -                                                                                                              ;
++---------------------------------+-------+------+----------------------------------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component ;
++-------------------------+-------------+-------------------------------------------------------------------+
+; Parameter Name          ; Value       ; Type                                                              ;
++-------------------------+-------------+-------------------------------------------------------------------+
+; ADD_RAM_OUTPUT_REGISTER ; OFF         ; Untyped                                                           ;
+; ADD_USEDW_MSB_BIT       ; OFF         ; Untyped                                                           ;
+; CLOCKS_ARE_SYNCHRONIZED ; FALSE       ; Untyped                                                           ;
+; DELAY_RDUSEDW           ; 1           ; Untyped                                                           ;
+; DELAY_WRUSEDW           ; 1           ; Untyped                                                           ;
+; LPM_NUMWORDS            ; 512         ; Signed Integer                                                    ;
+; LPM_SHOWAHEAD           ; OFF         ; Untyped                                                           ;
+; LPM_WIDTH               ; 16          ; Signed Integer                                                    ;
+; LPM_WIDTH_R             ; 64          ; Signed Integer                                                    ;
+; LPM_WIDTHU              ; 9           ; Signed Integer                                                    ;
+; LPM_WIDTHU_R            ; 7           ; Signed Integer                                                    ;
+; MAXIMIZE_SPEED          ; 5           ; Untyped                                                           ;
+; OVERFLOW_CHECKING       ; ON          ; Untyped                                                           ;
+; RAM_BLOCK_TYPE          ; AUTO        ; Untyped                                                           ;
+; RDSYNC_DELAYPIPE        ; 4           ; Signed Integer                                                    ;
+; UNDERFLOW_CHECKING      ; ON          ; Untyped                                                           ;
+; USE_EAB                 ; ON          ; Untyped                                                           ;
+; WRITE_ACLR_SYNCH        ; OFF         ; Untyped                                                           ;
+; WRSYNC_DELAYPIPE        ; 4           ; Signed Integer                                                    ;
+; CBXI_PARAMETER          ; dcfifo_uij1 ; Untyped                                                           ;
++-------------------------+-------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: yibu:inst1|dcfifo_mixed_widths:dcfifo_mixed_widths_component ;
++-------------------------+-------------+-------------------------------------------------------------------+
+; Parameter Name          ; Value       ; Type                                                              ;
++-------------------------+-------------+-------------------------------------------------------------------+
+; ADD_RAM_OUTPUT_REGISTER ; OFF         ; Untyped                                                           ;
+; ADD_USEDW_MSB_BIT       ; OFF         ; Untyped                                                           ;
+; CLOCKS_ARE_SYNCHRONIZED ; FALSE       ; Untyped                                                           ;
+; DELAY_RDUSEDW           ; 1           ; Untyped                                                           ;
+; DELAY_WRUSEDW           ; 1           ; Untyped                                                           ;
+; LPM_NUMWORDS            ; 512         ; Signed Integer                                                    ;
+; LPM_SHOWAHEAD           ; OFF         ; Untyped                                                           ;
+; LPM_WIDTH               ; 16          ; Signed Integer                                                    ;
+; LPM_WIDTH_R             ; 64          ; Signed Integer                                                    ;
+; LPM_WIDTHU              ; 9           ; Signed Integer                                                    ;
+; LPM_WIDTHU_R            ; 7           ; Signed Integer                                                    ;
+; MAXIMIZE_SPEED          ; 5           ; Untyped                                                           ;
+; OVERFLOW_CHECKING       ; ON          ; Untyped                                                           ;
+; RAM_BLOCK_TYPE          ; AUTO        ; Untyped                                                           ;
+; RDSYNC_DELAYPIPE        ; 4           ; Signed Integer                                                    ;
+; UNDERFLOW_CHECKING      ; ON          ; Untyped                                                           ;
+; USE_EAB                 ; ON          ; Untyped                                                           ;
+; WRITE_ACLR_SYNCH        ; OFF         ; Untyped                                                           ;
+; WRSYNC_DELAYPIPE        ; 4           ; Signed Integer                                                    ;
+; CBXI_PARAMETER          ; dcfifo_uij1 ; Untyped                                                           ;
++-------------------------+-------------+-------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue May 18 10:54:48 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pingpang -c pingpang
+Info: Found 1 design units, including 1 entities, in source file pingpang.bdf
+    Info: Found entity 1: pingpang
+Info: Elaborating entity "pingpang" for the top level hierarchy
+Warning: Block or symbol "FIFOcontrol" of instance "inst" overlaps another block or symbol
+Warning: Using design file yibu.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: yibu-SYN
+    Info: Found entity 1: yibu
+Info: Elaborating entity "yibu" for hierarchy "yibu:inst2"
+Info: Elaborating entity "dcfifo_mixed_widths" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component"
+Info: Elaborated megafunction instantiation "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component"
+Info: Instantiated megafunction "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component" with the following parameter:
+    Info: Parameter "intended_device_family" = "Cyclone II"
+    Info: Parameter "lpm_hint" = "MAXIMIZE_SPEED=5,"
+    Info: Parameter "lpm_numwords" = "512"
+    Info: Parameter "lpm_showahead" = "OFF"
+    Info: Parameter "lpm_type" = "dcfifo"
+    Info: Parameter "lpm_width" = "16"
+    Info: Parameter "lpm_widthu" = "9"
+    Info: Parameter "lpm_widthu_r" = "7"
+    Info: Parameter "lpm_width_r" = "64"
+    Info: Parameter "overflow_checking" = "ON"
+    Info: Parameter "rdsync_delaypipe" = "4"
+    Info: Parameter "underflow_checking" = "ON"
+    Info: Parameter "use_eab" = "ON"
+    Info: Parameter "wrsync_delaypipe" = "4"
+Info: Found 1 design units, including 1 entities, in source file db/dcfifo_uij1.tdf
+    Info: Found entity 1: dcfifo_uij1
+Info: Elaborating entity "dcfifo_uij1" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated"
+Info: Found 1 design units, including 1 entities, in source file db/a_graycounter_f86.tdf
+    Info: Found entity 1: a_graycounter_f86
+Info: Elaborating entity "a_graycounter_f86" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_f86:rdptr_g1p"
+Info: Found 1 design units, including 1 entities, in source file db/a_graycounter_31c.tdf
+    Info: Found entity 1: a_graycounter_31c
+Info: Elaborating entity "a_graycounter_31c" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|a_graycounter_31c:wrptr_g1p"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_cnu.tdf
+    Info: Found entity 1: altsyncram_cnu
+Info: Elaborating entity "altsyncram_cnu" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|altsyncram_cnu:fifo_ram"
+Info: Found 1 design units, including 1 entities, in source file db/dffpipe_c2e.tdf
+    Info: Found entity 1: dffpipe_c2e
+Info: Elaborating entity "dffpipe_c2e" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|dffpipe_c2e:rdaclr"
+Info: Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_7u7.tdf
+    Info: Found entity 1: alt_synch_pipe_7u7
+Info: Elaborating entity "alt_synch_pipe_7u7" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp"
+Info: Found 1 design units, including 1 entities, in source file db/dffpipe_1v8.tdf
+    Info: Found entity 1: dffpipe_1v8
+Info: Elaborating entity "dffpipe_1v8" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_7u7:rs_dgwp|dffpipe_1v8:dffpipe7"
+Info: Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_8u7.tdf
+    Info: Found entity 1: alt_synch_pipe_8u7
+Info: Elaborating entity "alt_synch_pipe_8u7" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp"
+Info: Found 1 design units, including 1 entities, in source file db/dffpipe_2v8.tdf
+    Info: Found entity 1: dffpipe_2v8
+Info: Elaborating entity "dffpipe_2v8" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|alt_synch_pipe_8u7:ws_dgrp|dffpipe_2v8:dffpipe10"
+Info: Found 1 design units, including 1 entities, in source file db/cmpr_s16.tdf
+    Info: Found entity 1: cmpr_s16
+Info: Elaborating entity "cmpr_s16" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cmpr_s16:rdempty_eq_comp"
+Info: Found 1 design units, including 1 entities, in source file db/cntr_7hd.tdf
+    Info: Found entity 1: cntr_7hd
+Info: Elaborating entity "cntr_7hd" for hierarchy "yibu:inst2|dcfifo_mixed_widths:dcfifo_mixed_widths_component|dcfifo_uij1:auto_generated|cntr_7hd:cntr_b"
+Warning: Using design file FIFOcontrol.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info: Found design unit 1: FIFOcontrol-BEHAVIOR
+    Info: Found entity 1: FIFOcontrol
+Info: Elaborating entity "FIFOcontrol" for hierarchy "FIFOcontrol:inst"
+Info: Implemented 398 device resources after synthesis - the final resource count might be different
+    Info: Implemented 34 input pins
+    Info: Implemented 132 output pins
+    Info: Implemented 200 logic cells
+    Info: Implemented 32 RAM segments
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 254 megabytes
+    Info: Processing ended: Tue May 18 10:54:50 2021
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:03
+
+

@@ -1,0 +1,2481 @@
+Version:
+	9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+
+Chip Device Options:
+	Device Name:	EP2S15F484C3
+	Device JTAG code:	ffffffff
+	Programming_mode:	Passive Serial
+	NWS_NRS_NCS:	UNRESERVED
+	RDYNBUSY:	UNRESERVED
+	DATA 7 to 1:	UNRESERVED
+	nCEO:	UNRESERVED
+	UNUSED PINS:	RESERVED_GND
+	Default IO Standard::	3.3-V LVTTL
+	User Start-up Clock:	0
+	Auto Restart on Error:	1
+	Release Clears Before Tristates:	0
+	Device Clear:	0
+	Test And Scan:	0
+	Device OE:	0
+	Enable Lock Output:	0
+	Enable Init Done:	0
+	Enable JTAG BST:	0
+	Enable Vref A:	0
+	Enable Vref B:	0
+
+
+
+****************************
+******Individual Atoms******
+****************************
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 0
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[0]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a0~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 0
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 1
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[1]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a1~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 1
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 2
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[2]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a2~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 2
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 3
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[3]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a3~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 3
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 4
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[4]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a4~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 4
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 5
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[5]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a5~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 5
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 6
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[6]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a6~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 6
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7 -- UNIQUE
+	Atom Hier Name: 
+	Atom Id: 7
+	Atom Type: stratixii_ram_block (WYSIWYG)
+
+	INPUTS (Driven By):
+		0: [PORTAWE]	~ !(wren)	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: [CLK0]	  clock	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+		13: NO ITERM
+		14: NO ITERM
+		15: NO ITERM
+		16: [PORTADATAIN]	  data[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		17: [PORTAADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		18: [PORTAADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		19: [PORTAADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		20: [PORTAADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		21: [PORTAADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		22: [PORTBADDR]	  address[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		23: [PORTBADDR]	  address[1]	LIT INDEX 1	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		24: [PORTBADDR]	  address[2]	LIT INDEX 2	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		25: [PORTBADDR]	  address[3]	LIT INDEX 3	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+		26: [PORTBADDR]	  address[4]	LIT INDEX 4	GLOBAL:DONT_CARE	DELAY_CHAIN:CONNECTED,NONE
+	OUTPUTS (Int. Connections):
+		0: [PORTADATAOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[7]	LIT INDEX 0 FANOUTS 1 REGED POS
+		1: [OBSERVABLEPORTAWEREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_we_reg	LIT INDEX 0 FANOUTS 0
+		2: [OBSERVABLEPORTADATAINREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_datain_reg0	LIT INDEX 0 FANOUTS 0
+		3: [OBSERVABLEPORTAMEMORYREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_memory_reg0	LIT INDEX 0 FANOUTS 0
+		4: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_address_reg0	LIT INDEX 0 FANOUTS 0
+		5: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_address_reg1	LIT INDEX 1 FANOUTS 0
+		6: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_address_reg2	LIT INDEX 2 FANOUTS 0
+		7: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_address_reg3	LIT INDEX 3 FANOUTS 0
+		8: [OBSERVABLEPORTAADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~porta_address_reg4	LIT INDEX 4 FANOUTS 0
+		9: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~portb_address_reg0	LIT INDEX 0 FANOUTS 0
+		10: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~portb_address_reg1	LIT INDEX 1 FANOUTS 0
+		11: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~portb_address_reg2	LIT INDEX 2 FANOUTS 0
+		12: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~portb_address_reg3	LIT INDEX 3 FANOUTS 0
+		13: [OBSERVABLEPORTBADDRESSREGOUT]	altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ram_block1a7~portb_address_reg4	LIT INDEX 4 FANOUTS 0
+
+	PARAMETER LIST:
+		operation_mode                 = single_port
+		ram_block_type                 = auto
+		logical_ram_name               = altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|ALTSYNCRAM
+		init_file                      = hm62256.mif
+		init_file_layout               = port_a
+		data_interleave_width_in_bits  = 1
+		data_interleave_offset_in_bits = 1
+		port_a_logical_ram_depth       = 32
+		port_a_logical_ram_width       = 8
+		port_a_data_out_clock          = clock0
+		port_a_data_out_clear          = none
+		port_a_first_address           = 0
+		port_a_last_address            = 31
+		port_a_first_bit_number        = 7
+		port_a_data_width              = 1
+		port_a_address_width           = 5
+
+
+- ATOM ------------------------
+	ATOM_NAME: q[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 33
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[0]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[0]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: q[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 34
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[1]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[1]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: q[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 35
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[2]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[2]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: q[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 36
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[3]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[3]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: q[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 37
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[4]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[4]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: q[5] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 38
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[5]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[5]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: q[6] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 39
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[6]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[6]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: q[7] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 40
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: [DATAIN]	  altsyncram:altsyncram_component|altsyncram_q0c1:auto_generated|q_a[7]	LIT INDEX 0	GLOBAL:DONT_CARE	DELAY_CHAIN:UNCONNECTED
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: NONE
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	q[7]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = output
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	N/A
+		PAD TO CORE 1:	N/A
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: wren -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 41
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	wren	LIT INDEX 0 FANOUTS 8
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	wren	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: clock -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 42
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	clock	LIT INDEX 0 FANOUTS 8
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	clock	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 43
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[0]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[0]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: address[0] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 44
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	address[0]	LIT INDEX 0 FANOUTS 16
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	address[0]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: address[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 45
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	address[1]	LIT INDEX 0 FANOUTS 16
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	address[1]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: address[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 46
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	address[2]	LIT INDEX 0 FANOUTS 16
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	address[2]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: address[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 47
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	address[3]	LIT INDEX 0 FANOUTS 16
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	address[3]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: address[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 48
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	address[4]	LIT INDEX 0 FANOUTS 16
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	address[4]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[1] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 49
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[1]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[1]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[2] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 50
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[2]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[2]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[3] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 51
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[3]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[3]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[4] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 52
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[4]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[4]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[5] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 53
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[5]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[5]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[6] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 54
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[6]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[6]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: data[7] -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 55
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: [PADIO]	DISCONNECTED
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	data[7]	LIT INDEX 0 FANOUTS 1
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	data[7]	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+
+- ATOM ------------------------
+	ATOM_NAME: ~QUARTUS_CREATED_GND~I -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 56
+	Atom Type: stratixii_lcell_comb
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	~QUARTUS_CREATED_GND~I	LIT INDEX 0 FANOUTS 0
+		1: NONE
+		2: NONE
+		3: NONE
+
+	PARAMETER LIST:
+		(Skipping parameters for lcell or lcell comb with no fanout)
+
+
+- ATOM ------------------------
+	ATOM_NAME: ~DATA0~ -- NON-UNIQUE
+	Atom Hier Name: 
+	Atom Id: 57
+	Atom Type: stratixii_io
+
+	INPUTS (Driven By):
+		0: NO ITERM
+		1: NO ITERM
+		2: NO ITERM
+		3: NO ITERM
+		4: NO ITERM
+		5: NO ITERM
+		6: NO ITERM
+		7: NO ITERM
+		8: NO ITERM
+		9: NO ITERM
+		10: NO ITERM
+		11: NO ITERM
+		12: NO ITERM
+	OUTPUTS (Int. Connections):
+		0: [COMBOUT]	~DATA0~	LIT INDEX 0 FANOUTS 0
+		1: NONE
+		2: NONE
+		3: NONE
+		4: NONE
+		5: NONE
+		6: [PADIO]	~DATA0~	LIT INDEX 0 FANOUTS 0
+		7: NONE
+		8: NONE
+		9: NONE
+		10: NONE
+		11: NONE
+
+	PARAMETER LIST:
+		operation_mode                 = input
+		ddio_mode                      = none
+		input_register_mode            = none
+		output_register_mode           = none
+		oe_register_mode               = none
+		input_async_reset              = none
+		output_async_reset             = none
+		oe_async_reset                 = none
+		input_sync_reset               = none
+		output_sync_reset              = none
+		oe_sync_reset                  = none
+		input_power_up                 = low
+		output_power_up                = low
+		oe_power_up                    = low
+		dqs_out_mode                   = none
+		dqs_delay_buffer_mode          = none
+		inclk_input                    = normal
+		ddioinclk_input                = negated_inclk
+		dft_delayctrl_select           = 0
+		sim_dqs_intrinsic_delay        = 0
+		sim_dqs_delay_increment        = 0
+		sim_dqs_offset_increment       = 0
+
+	DELAY CHAINS:
+		PAD TO CORE 0:	0
+		PAD TO CORE 1:	0
+		TCO CHAIN:	0
+		TCOE CHAIN:	0
+		PAD TO INPUT REG:	0
+		DQS LOCAL CLOCK:	0
+		NDQS LOCAL CLOCK:	0
+		DQSOUT:	0
+
+	IO STANDARD:			3.3-V LVTTL
+	CURRENT STRENGTH:		DEFAULT
+	PCI DIODE:       		OFF
+	TERMINATION:     		OFF
+	Output Duty Cycle:		OFF
+	DQS INFORMATION:			
+		Not a DQS atom.
+		DQS system clock:	False
+	PLL COMPENSATED:		False
+

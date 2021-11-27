@@ -1,0 +1,43 @@
+|usbconnection
+clk => nrd~reg0.CLK
+clk => wr~reg0.CLK
+clk => a_in[7].CLK
+clk => a_in[6].CLK
+clk => a_in[5].CLK
+clk => a_in[4].CLK
+clk => a_in[3].CLK
+clk => a_in[2].CLK
+clk => a_in[1].CLK
+clk => a_in[0].CLK
+clk => dout[7]~reg0.CLK
+clk => dout[6]~reg0.CLK
+clk => dout[5]~reg0.CLK
+clk => dout[4]~reg0.CLK
+clk => dout[3]~reg0.CLK
+clk => dout[2]~reg0.CLK
+clk => dout[1]~reg0.CLK
+clk => dout[0]~reg0.CLK
+din[0] => a_in[0].DATAIN
+din[1] => a_in[1].DATAIN
+din[2] => a_in[2].DATAIN
+din[3] => a_in[3].DATAIN
+din[4] => a_in[4].DATAIN
+din[5] => a_in[5].DATAIN
+din[6] => a_in[6].DATAIN
+din[7] => a_in[7].DATAIN
+nrxf => Selector0.IN3
+nrxf => next_state~0.DATAB
+nrd <= nrd~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ntxe => Selector1.IN3
+ntxe => next_state~1.DATAB
+wr <= wr~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[0] <= dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= dout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[5] <= dout[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[6] <= dout[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[7] <= dout[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

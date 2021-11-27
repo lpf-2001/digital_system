@@ -1,0 +1,7 @@
+
+State Machine - |pingpang|FIFOcontrol:inst|fstate
+Name fstate.w1r2 fstate.r1w2 fstate.w1 fstate.initial_1 
+fstate.initial_1 0 0 0 0 
+fstate.w1 0 0 1 1 
+fstate.r1w2 0 1 0 1 
+fstate.w1r2 1 0 0 1 
